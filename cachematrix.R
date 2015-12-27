@@ -13,7 +13,7 @@ list (set=set,get=get,setinv=setinv,getinv=getinv)
 
 
 
-cacheSolve <- function(x=matrix(), ...) {       # This function computes the inverse of the special matrix returned by the above function. If the inverse has already been calculated and matrix is unchanged, then the cacheSolve function should retrieve the inverse from the cache
+cacheSolve <- function(x=matrix(), ...) {       # This function computes the inverse of the special matrix returned by the above function. If the inverse has already been calculated and matrix is unchanged, then the cacheSolve function should retrieve the inverse from the cache.
         m <- x$getinv()
         if(!is.null(m)){
                 message("getting cached data")
